@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticaMartinezAPI", "ExpedienteClientes\OpticaMartinezAPI.csproj", "{AA12A8D8-67FE-497C-B923-ECB29FD40742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpmData", "OpmData\OpmData.csproj", "{94FE7468-4C9C-4C1C-BD72-5D24ACC2EFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpmImplement", "OpmImplement\OpmImplement.csproj", "{FF1A369F-BABF-4FD7-8AE2-87681A36EFAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpmInterfaces", "OpmInterfaces\OpmInterfaces.csproj", "{EEB51FC6-CDFF-4D49-B325-3EA34F22F05E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA12A8D8-67FE-497C-B923-ECB29FD40742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA12A8D8-67FE-497C-B923-ECB29FD40742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA12A8D8-67FE-497C-B923-ECB29FD40742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA12A8D8-67FE-497C-B923-ECB29FD40742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94FE7468-4C9C-4C1C-BD72-5D24ACC2EFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FE7468-4C9C-4C1C-BD72-5D24ACC2EFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FE7468-4C9C-4C1C-BD72-5D24ACC2EFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FE7468-4C9C-4C1C-BD72-5D24ACC2EFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1A369F-BABF-4FD7-8AE2-87681A36EFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1A369F-BABF-4FD7-8AE2-87681A36EFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1A369F-BABF-4FD7-8AE2-87681A36EFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1A369F-BABF-4FD7-8AE2-87681A36EFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB51FC6-CDFF-4D49-B325-3EA34F22F05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB51FC6-CDFF-4D49-B325-3EA34F22F05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB51FC6-CDFF-4D49-B325-3EA34F22F05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB51FC6-CDFF-4D49-B325-3EA34F22F05E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
