@@ -44,6 +44,7 @@
     <Compile Include="Interfaces\IRecordRepository.cs" />
     <Compile Include="Interfaces\IRefractionRepository.cs" />
     <Compile Include="Interfaces\IRoleRepository.cs" />
+    <Compile Include="Interfaces\ISessionManagementService.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
