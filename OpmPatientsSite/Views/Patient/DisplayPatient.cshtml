@@ -60,8 +60,15 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">
+            <div class="panel-heading" style = "height: 50px;">
                 Registros de Expediente
+                <div class="pull-right">
+                    @using (Html.BeginForm("AddRecordView", "Record", FormMethod.Post, new {id = "Form"}))
+                    {
+                        @Html.HiddenFor(model => model.PatientId);
+                        <button id="createButton" type="submit" class="btn btn-primary btn-sm">Agregar</button>                           
+                    }
+                </div>
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -98,5 +105,3 @@
     <!-- /.col-lg-12 -->
 </div>
 </div>
-
-<!-- Page-Level Demo Scripts - Tables - Use for reference -->

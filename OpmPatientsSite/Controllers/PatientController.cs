@@ -33,7 +33,7 @@ namespace OpmPatientsSite.Controllers
 
             var mapedPatient = Mapper.Map<Patient>(model);
             var patient = _patientRepository.Create(mapedPatient);
-            return RedirectToAction("DisplayPatient",patient.PatientId);
+            return RedirectToAction("DisplayPatient", new {id = patient.PatientId});
         }
 
         public ActionResult DisplayPatient(int id = -1)

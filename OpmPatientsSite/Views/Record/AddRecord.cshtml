@@ -1,0 +1,48 @@
+﻿@model OpmPatientsSite.Models.Record.NewRecordModel
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Agregar Nuevo Registro</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-6">
+                @using (Html.BeginForm("AddRecord", "Record", FormMethod.Post, new { id = "Form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.LenseType)
+                        @Html.TextBoxFor(model => model.LenseType, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.LenseType, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DIP)
+                        @Html.TextBoxFor(model => model.DIP, new { @class = "form-control", @type = "number" })
+                        @Html.ValidationMessageFor(model => model.DIP, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.PreviousRx)
+                        @Html.TextBoxFor(model => model.PreviousRx, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.PreviousRx, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Observations)
+                        @Html.TextAreaFor(model => model.Observations, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Observations, "", new { @class = "text-danger" })
+                    </div>
+                    @Html.HiddenFor(model => model.PatientId);
+                    <button type="submit" class="btn btn-success">Agregar Paciente</button>
+                    <button type="reset" class="btn btn-info">Cancelar</button>
+                }
+            </div>
+            <!-- /.col-lg-6 (nested) -->
+        </div>
+        <!-- /.row (nested) -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->

@@ -10,7 +10,7 @@ namespace OpmPatientsSite
         {
             Mapper.Initialize(config =>
             {
-                config.CreateMap<PatientModel, Patient>();
+                config.CreateMap<PatientModel, Patient>().ForMember(x => x.PatientId, y => y.Ignore());
                 config.CreateMap<Patient, PatientModel>();
             });
         }

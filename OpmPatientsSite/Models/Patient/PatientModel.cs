@@ -8,6 +8,9 @@ namespace OpmPatientsSite.Models.Patient
 {
     public class PatientModel
     {
+
+        public int PatientId { get; set; }
+
         [Required(ErrorMessage = "Debe ingresar Nombre Completo")]
         [Display(Name = "Nombre Completo")]
         public string Name { get; set; }
